@@ -1,0 +1,367 @@
+@import url(../css/font-family.css);
+
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: RobotoL;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: RobotoR;
+  font-size: 30px;
+}
+
+.btn {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-family: Anton;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+
+ul {
+  list-style-type: none;
+}
+/* --------------------------------------- Navigation Bar ---------------------------------------> */
+
+.nav {
+  background: black;
+  padding: 0 32px;
+  height: 0px;
+  min-height: 80px;
+  overflow: hidden;
+}
+
+
+.nav .nav-content .nav-link {
+  padding: 25px 16px;
+  font-size: 18px;
+  position: relative;
+  font-family: RobotoR;
+}
+
+.nav .nav-content .nav-link:hover {
+  background-color: yellowgreen;
+}
+
+.nav .brand a {
+  font-size: 26px;
+  padding: 16px 0;
+  display: block;
+  font-family: Anton;
+}
+
+/*------------------------------------- Banner  -----------------------------------------------*/
+
+main .banner {
+  background: url(../assets/Banner-Image/TokyoOlympics-2021-GettyImages-1188789102.jpg);
+  background-size: cover;
+  height: 640px;
+ 
+}
+
+main .banner .site-name {
+  padding-top: 160px;
+  color: white;
+}
+
+main .banner h1,
+h3 {
+  margin: 8px;
+}
+
+main .banner h1 {
+  font-family: Anton;
+  font-size: 40px;
+}
+
+main .banner h3 {
+  font-family: RobotoR;
+  font-size: 30px;
+}
+
+main .banner .btn {
+  margin: 17.2px;
+  background: #24a0ed;
+  border: 1px solid white;
+  color: white;
+}
+
+main .banner .btn:hover {
+  background: yellowgreen;
+  border: 1px solid white;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* -------------------------------------- Blog Content ------------------------- */
+
+.about-us h1 {
+  /* margin: 0px; from bootstrap */
+  color: white;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 50px;
+  background-color: #d32f2f;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.about-us p {
+  color: white;
+  font-family: RobotoL;
+  font-size: 25px;
+  background-color: #002626;
+  padding: 50px 100px;
+  line-height: 35px;
+}
+
+.blog h1 {
+  margin: 0px;
+  color: white;
+  font-family: Roboto;
+  font-size: 50px;
+  background-color: #d32f2f;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+.blog-cards {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.card {
+  border-radius: 5px;
+  margin: 8% 5%;
+  background-color: #002626;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.image img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.title h2 {
+  font-size: 20px;
+  font-family: Roboto;
+  color: white;
+}
+
+.des {
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  color: white;
+  text-align: center;
+  font-family: RobotoL;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.blg-btn {
+  border: none;
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-family: Roboto;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  color: white;
+  background-color: #24a0ed;
+}
+.blg-btn:hover {
+  background-color: yellowgreen;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* --------------------------------------- Footer Menu ---------------------------------------> */
+
+footer {
+  background-color: #24aa9444;
+  line-height: 24px;
+  color: white;
+  font-family: Roboto;
+}
+
+footer .abstract {
+  background-color: #d32f2f;
+  padding: 16px;
+  padding-top: 48px;
+  clip-path: polygon(0% 5%, 15% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+footer .content {
+  max-width: 1080px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+footer header {
+  font-size: 21px;
+  padding-block: 16px;
+}
+
+footer .content a {
+  display: block;
+  padding-block: 12px;
+  color: white;
+  opacity: 0.65;
+}
+
+footer .content a:hover {
+  opacity: 1;
+  color: #ffff00;
+  font-size: 18px;
+}
+
+footer input {
+  border-style: solid;
+  line-height: 24px;
+  padding: 12px 16px;
+  font-size: 16px;
+  width: 100%;
+  margin-block: 8px;
+  border-radius: 8px;
+  border-width: 2px;
+}
+
+footer input[type="email"] {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  width: 90%;
+}
+
+footer input[type="submit"] {
+  background-color: #24a0ed;
+  color: white;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 20px;
+  border: none;
+  width:90%;
+}
+
+footer input[type="submit"]:hover {
+  background-color: yellowgreen;
+}
+
+footer .notice {
+  text-align: center;
+  padding: 24px;
+}
+
+footer .notice strong {
+  color: #ffff00;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-list {
+  display: none;
+}
+
+/* ----------------------------------- MObile Version ------------------------------ */
+@media only screen and (max-width: 600px) {
+  .blog-cards {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .about-us p {
+    padding: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  main .banner {
+    height: 408px;
+  }
+
+  main .banner .site-name {
+    padding-top: 80px;
+  }
+
+  footer .content {
+    max-width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 16px;
+    text-align: center;
+  }
+
+  .nav-content {
+    display: none;
+  }
+
+  .nav-content-container {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  .mobile-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  i {
+    color: white;
+    align-self: center;
+    font-size: 32px;
+  }
+}
